@@ -1,12 +1,49 @@
 .buttonsContainer {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-}
-
-.button {
-    width: 45px;
-    height: 45px;
-    margin: 3px;
-}
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .button {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #444;
+    color: white;
+    transition: 0.3s;
+  }
+  
+  .button:hover {
+    background: #666;
+  }
+  
+  .button:active {
+    transform: scale(0.95);
+  }
+  
+  .button:nth-child(4n) {
+    background: #007aff;
+  }
+  
+  .button:nth-child(4n):hover {
+    background: #008cff;
+  }
+  
+  .button:nth-child(15) {
+    background: #ff9500;
+  }
+  
+  .button:nth-child(15):hover {
+    background: #ffa500;
+  }
+  
+  .button:first-child {
+    background: #ff3b30;
+  }
+  
+  .button:first-child:hover {
+    background: #ff5c5c;
+  }
